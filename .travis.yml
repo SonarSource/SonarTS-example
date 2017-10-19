@@ -1,0 +1,7 @@
+language: node_js
+
+node_js:
+  - "8"
+
+script:
+  - cd example1 && npm run build && npm run test && node analyse.js
