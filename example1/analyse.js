@@ -13,5 +13,5 @@ scanner(
   },
   () => {
     // callback is required
-  },
+  }
 );
