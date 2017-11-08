@@ -1,0 +1,15 @@
+{
+  "name": "ts-frontend",
+  "version": "1.0.0",
+  "description": "Frontend part of multi-module gradle project",
+  "main": "greeter.js",
+  "author": "SonarSource",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^2.6.1"
+  },
+  "scripts": {
+    "build": "rm -rf lib && tsc -p . && cp src/greeter.html lib/index.html"
+  }
+}
