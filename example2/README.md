@@ -1,11 +1,18 @@
-# Sample multi-module project using gradle and TypeScript 
+# Sample Gradle multi-module project using TypeScript and Java 
 
 This project contains two modules, backend written in Java and 
-frontend written in TypeScript. It uses gradle multi-module build, where
-frontend module is built using [gradle-node-plugin](https://github.com/srs/gradle-node-plugin)
+frontend written in TypeScript. It uses Gradle multi-module build, where
+frontend module is built with Yarn and TypeScript using Node.js managed by [gradle-node-plugin](https://github.com/srs/gradle-node-plugin)
 
-Frontend module handles its dependencies with yarn and is compiled with TypeScript compiler. During SonarQube analysis started by `gradle sonarqube` 
-we set the `sonar.typescript.node` property to use NodeJS installation managed with gradle plugin, so build is not depending
-on Node being preinstalled.
+To run SonarQube analysis execute
+```
+./gradlew sonarqube 
+```
+
+We make use of the [`sonar.typescript.node`](https://github.com/SonarSource/SonarTS-example/blob/gradle-multimodule/example2/ts-frontend/build.gradle#L15) 
+property to use Node.js installation managed with Gradle plugin, so build is not depending on Node.js being preinstalled.
+This property is available since SonarTS version 1.2.0 .
  
-
+Analysis should raise an issue on line 7 in [greeter.ts](https://github.com/SonarSource/SonarTS-example/blob/gradle-multimodule/example2/ts-frontend/greeter.ts#L7)
+that template literals are used in regular string [RSPEC-3786](https://rules.sonarsource.com/typescript/RSPEC-3786).
+Note that in order to raise the issue, you have to have the rule activated in your quality profile. 

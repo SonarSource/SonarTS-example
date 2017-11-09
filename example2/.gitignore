@@ -1,4 +1,3 @@
 .gradle
 build
-ts-frontend/node_modules
 ts-frontend/lib
