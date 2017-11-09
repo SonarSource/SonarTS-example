@@ -1,0 +1,22 @@
+plugins {
+    id "com.moowork.node" version "1.2.0"
+}
+
+apply plugin: 'com.moowork.node'
+
+node {
+    version = '9.1.0'
+    download = true
+}
+
+sonarqube {
+    properties {
+        property "sonar.sources", "src"
+        property "sonar.typescript.node", node.variant.nodeExec
+    }
+}
+
+
+task build(dependsOn: 'yarn_build') {
+
+}
