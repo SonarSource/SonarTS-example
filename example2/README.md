@@ -14,5 +14,4 @@ property to use Node.js installation managed with Gradle plugin, so build is not
 This property is available since SonarTS version 1.2.0 .
  
 Analysis should raise an issue on line 7 in [greeter.ts](https://github.com/SonarSource/SonarTS-example/blob/gradle-multimodule/example2/ts-frontend/greeter.ts#L7)
-that template literals are used in regular string [RSPEC-3786](https://rules.sonarsource.com/typescript/RSPEC-3786).
-Note that in order to raise the issue, you have to have the rule activated in your quality profile. 
+that array content is not used [RSPEC-4030](https://rules.sonarsource.com/typescript/RSPEC-4030). 
