@@ -26,3 +26,6 @@ npm run test
 ```
 * Then provide coverage report location as value of `sonar.typescript.lcov.reportPaths` property of your analysis (see [`analyse.js`](analyse.js))
 * Run analysis and find your coverage in SonarQube!
+* This project also uses [`jest-sonar-reporter`](https://www.npmjs.com/package/jest-sonar-reporter) to generate 
+[test execution data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data#GenericTestData-GenericExecution). See configuration in [`jest.config.js`](jest.config.js). 
+Report is uploaded by setting `sonar.testExecutionReportPaths` property (see [`analyse.js`](analyse.js)) 
