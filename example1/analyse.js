@@ -9,6 +9,7 @@ scanner(
       "sonar.sources": "src",
       "sonar.tests": "tests",
       "sonar.typescript.lcov.reportPaths": "coverage/lcov.info",
+      "sonar.testExecutionReportPaths": "test-report.xml"
     },
   },
   () => {
