@@ -24,5 +24,5 @@ node analyse.js
 ```
 npm run test
 ```
-* Then provide coverage report location as value of `sonar.typescript.lcov.reportPaths` property of your analysis (see [`analyse.js`](analysis.js))
+* Then provide coverage report location as value of `sonar.typescript.lcov.reportPaths` property of your analysis (see [`analyse.js`](analyse.js#L11))
 * Run analysis and find your coverage in SonarQube!
