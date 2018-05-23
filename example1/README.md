@@ -29,3 +29,4 @@ npm run test
 * This project also uses [`jest-sonar-reporter`](https://www.npmjs.com/package/jest-sonar-reporter) to generate 
 [test execution data](https://docs.sonarqube.org/display/SONAR/Generic+Test+Data#GenericTestData-GenericExecution). See configuration in [`jest.config.js`](jest.config.js). 
 Report is uploaded by setting `sonar.testExecutionReportPaths` property (see [`analyse.js`](analyse.js)) 
+* See documentation about tests and coverage import [here](https://docs.sonarqube.org/display/PLUG/TypeScript+Test+Execution+and+Coverage+Results+Import)
