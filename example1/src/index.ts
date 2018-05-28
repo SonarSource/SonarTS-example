@@ -13,5 +13,6 @@ export function fibonacci(num: number): number | null {
     num--;
   }
 
-  return b;
+
+    return b;
 }
